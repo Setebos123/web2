@@ -1,0 +1,219 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #c5c5c5;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #0d6efd;
+    --bs-link-hover-color: #0a58ca;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    scroll-behavior: smooth; /* Dodanie płynnego przewijania */
+}
+
+.nav {
+    background-color: #00000073;
+    overflow: hidden;
+    position: fixed; /* Ustawienie pozycji na fixed */
+    top: 0;
+    width: 100%; /* Pełna szerokość */
+    height: 60px; /* Wysokość nawigacji */
+    z-index: 1000; /* Ustawienie wysokiego z-index, aby nawigacja była na wierzchu */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    height: 100%; /* Wysokość kontenera równa wysokości nawigacji */
+}
+
+
+.nav-link {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.intro-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Pełna wysokość widoku */
+    background-image: url('obraz.webp'); /* Ścieżka do obrazu */
+    background-size: cover; /* Dopasowanie obrazu do rozmiaru kontenera */
+    background-position: center; /* Wyśrodkowanie obrazu */
+    background-repeat: no-repeat; /* Brak powtarzania obrazu */
+    color: #fff; /* Kolor tekstu */
+    text-align: center;
+}
+
+.intro-screen h1 {
+    font-size: 6rem; /* Rozmiar czcionki */
+    margin: 0;
+    color: rgb(0, 0, 0);
+    padding: 10px; /* Odstęp wewnętrzny */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    font-family: 'Indie Flower', cursive; /* Czcionka odręczna */
+}
+
+.intro-details {
+    font-size: 3rem; /* Mniejszy rozmiar czcionki */
+    margin-top: 10px; /* Odstęp od nagłówka */
+    color: rgb(0, 0, 0);
+    padding: 10px; /* Odstęp wewnętrzny */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    font-family: 'Indie Flower', cursive; /* Czcionka odręczna */
+}
+
+.more-info-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #851111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.more-info-button:hover {
+    background-color: #a83232;
+}
+
+.more-info-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Efekt pisania */
+/* Efekt pisania */
+.typing-effect {
+  overflow: hidden; /* Ukrycie tekstu, który nie jest jeszcze widoczny */
+  white-space: nowrap; /* Zapobieganie zawijaniu tekstu */
+  margin: 0 auto; /* Wyśrodkowanie elementu */
+  letter-spacing: .15em; /* Odstępy między literami */
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end 1;
+  font-family: 'Indie Flower', cursive; /* Czcionka odręczna */
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+.about-section {
+    padding: 50px;
+    width: 100%; /* Pełna szerokość */
+    box-sizing: border-box; /* Uwzględnienie paddingu w szerokości */
+}
+
+
+.container_about {
+    display: flex;
+    flex-direction: column; /* Ustawienie kierunku flex na kolumny */
+    justify-content: center; /* Wyśrodkowanie pionowe */
+    align-items: center; /* Wyśrodkowanie poziome */
+    height: 100%; /* Wysokość kontenera równa wysokości nawigacji */
+    margin-top: 4%;
+    margin-left: 20%; /* Odległość od lewej krawędzi */
+    margin-right: 20%; /* Odległość od prawej krawędzi */
+}
+
+.container_about h2 {
+    font-size: 1.5rem; /* Rozmiar czcionki */
+}
+.container_about p {
+    font-size: 1.5rem; /* Rozmiar czcionki */
+}
+
+.about-image {
+    width: 60%; /* Zmniejszenie szerokości do 50% */
+    height: auto; /* Automatyczna wysokość, aby zachować proporcje */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    margin-top: 20px; /* Odstęp od góry */
+}
+
