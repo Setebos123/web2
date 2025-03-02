@@ -217,3 +217,85 @@ body, html {
     margin-top: 20px; /* Odstęp od góry */
 }
 
+/* Dla ekranów o szerokości do 768px (np. telefony) */
+@media (max-width: 768px) {
+    .nav {
+        height: 50px; /* Zmniejszenie wysokości nawigacji */
+    }
+
+    .nav-link {
+        padding: 10px 12px; /* Zmniejszenie paddingu */
+        font-size: 0.9rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    .intro-screen h1 {
+        font-size: 3rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    .intro-details {
+        font-size: 1.5rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    .more-info-button {
+        padding: 8px 16px; /* Zmniejszenie paddingu */
+    }
+
+    .about-section {
+        padding: 20px; /* Zmniejszenie paddingu */
+    }
+
+    .container_about {
+        margin-left: 10%; /* Zmniejszenie marginesów */
+        margin-right: 10%;
+    }
+
+    .container_about h2, .container_about p {
+        font-size: 1rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    .about-image {
+        width: 80%; /* Zwiększenie szerokości obrazu */
+    }
+}
+
+/* Dla ekranów o szerokości do 480px (np. małe telefony) */
+@media (max-width: 480px) {
+    .nav {
+        height: 40px; /* Zmniejszenie wysokości nawigacji */
+    }
+
+    .nav-link {
+        padding: 8px 10px; /* Zmniejszenie paddingu */
+        font-size: 0.8rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    .intro-screen h1 {
+        font-size: 2rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    .intro-details {
+        font-size: 1rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    .more-info-button {
+        padding: 6px 12px; /* Zmniejszenie paddingu */
+    }
+
+    .about-section {
+        padding: 10px; /* Zmniejszenie paddingu */
+    }
+
+    .container_about {
+        margin-left: 5%; /* Zmniejszenie marginesów */
+        margin-right: 5%;
+    }
+
+    .container_about h2, .container_about p {
+        font-size: 0.8rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    .about-image {
+        width: 100%; /* Zwiększenie szerokości obrazu */
+    }
+}
+
